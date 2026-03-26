@@ -12,6 +12,61 @@
             "django": true,
             "autoStartBrowser": false,
             "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Add movies to DB",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "add_movies_db"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update movies from CSV",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_movies_from_csv"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update descriptions (OpenAI)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_descriptions"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Movie embeddings (OpenAI)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "movie_embeddings"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Movie similarities (OpenAI embeddings)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "movie_similarities"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
         }
     ]
 }
