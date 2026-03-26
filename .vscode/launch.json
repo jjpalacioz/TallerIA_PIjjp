@@ -1,0 +1,83 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django: Run Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update descriptions (OpenAI)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_descriptions"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update movies from CSV",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_movies_from_csv"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update images (OpenAI DALL-E)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_images"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Update images from folder",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "update_images_from_folder"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Movie similarities (OpenAI embeddings)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "movie_similarities"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        },
+        {
+            "name": "Django: Movie embeddings (OpenAI)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DjangoProjectBase/manage.py",
+            "args": [
+                "movie_embeddings"
+            ],
+            "django": true,
+            "cwd": "${workspaceFolder}/DjangoProjectBase"
+        }
+    ]
+}
