@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-+9jg)*p09$at+zck$n-6*djf=34w4sc*m##^fmph4pb$_nh%xb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.230.71.87']
+ALLOWED_HOSTS = ['34.230.71.87', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -130,6 +130,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
- os.path.join(BASE_DIR, "static"),
- 'moviereviews/static/',
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'moviereviews', 'static'),
 ]
